@@ -8,7 +8,7 @@
 header {
     background: #1B264F;
     height: 5rem;
-    
+    color: white; 
     display: flex;
     align-items: center;
     justify-content: center;
