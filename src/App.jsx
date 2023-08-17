@@ -11,6 +11,13 @@ export function App() {
   function hendleSenha(evento) {
     setSenha(evento.target.value)
   }
+
+  function hendleSubmit() {
+    alert(`
+    Usuário: ${usuario}
+    Senha: ${senha}
+    `)
+  }
   console.log(usuario)
   console.log(senha)
 
@@ -24,7 +31,7 @@ export function App() {
       </header>
 
       <main>
-        <form action="">
+        <form action="" onSubmit={hendleSubmit}>
           <div>
             <label htmlFor="usuario">Usuário</label>
             <input type="text" id="usuario" placeholder="Digite seu usuário" onChange={hendleUsuario} />
